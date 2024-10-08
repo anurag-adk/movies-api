@@ -10,6 +10,7 @@ const deleteMovie = require("./handlers/deleteMovie");
 require("./models/movies.model");
 
 const app = express();
+app.use(express.json()); //middleware for json
 const PORT = process.env.PORT;
 const db_conn = process.env.db_conn;
 
