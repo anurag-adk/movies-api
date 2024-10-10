@@ -15,7 +15,7 @@ const addMovie = async (req, res) => {
       rating: rating,
     });
   } catch (err) {
-    res.status(400).json({
+    res.status(500).json({
       status: "Failed",
       message: err.message,
     });

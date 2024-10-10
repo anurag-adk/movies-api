@@ -29,7 +29,7 @@ const deleteMovie = async (req, res) => {
       return;
     }
   } catch (err) {
-    res.status(400).json({
+    res.status(500).json({
       status: "Failed",
       message: err.message,
     });
