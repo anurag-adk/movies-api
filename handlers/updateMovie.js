@@ -4,10 +4,11 @@ const updateMovie = async (req, res) => {
   const movieModel = mongoose.model("movies");
 
   // console.log(req.body);
-
-  const { _id, name, info, img, rating } = req.body;
+  // console.log(req.params);
+  const id = req.params.id;
+  const { name, info, img, rating } = req.body;
   try {
-    if (!_id) throw "Id is missing";
+    if (!id) throw "Id is missing";
   } catch (err) {
     res.status(400).json({
       status: "Failed",
@@ -19,7 +20,7 @@ const updateMovie = async (req, res) => {
   try {
     await movieModel.updateOne(
       {
-        _id,
+        _id: id,
       },
       {
         name,

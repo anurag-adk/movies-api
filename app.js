@@ -24,11 +24,11 @@ mongoose
   });
 
 //Routes are here...
-app.get("/", indexHandler);
-app.post("/movies", addMovie); //create
-app.get("/movies", getMovies); //read
-app.patch("/movies", updateMovie); //update
-app.delete("/movies", deleteMovie); //delete
+app.get("/api/", indexHandler);
+app.post("/api/movies", addMovie); //create
+app.get("/api/movies", getMovies); //read
+app.patch("/api/movies/:id", updateMovie); //update
+app.delete("/api/movies", deleteMovie); //delete
 
 app.listen(PORT, () => {
   console.log(`Server started at: ${PORT}`);

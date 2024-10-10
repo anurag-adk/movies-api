@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 
 const getMovies = async (req, res) => {
   const movieModel = mongoose.model("movies");
+  let listMovies;
   try {
-    const listMovies = await movieModel.find({
+    listMovies = await movieModel.find({
       // rating: 8.8,
     });
   } catch (err) {
