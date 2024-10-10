@@ -6,21 +6,36 @@ The Movies API is a simple RESTful API allowing users to perform CRUD operations
 
 ### Installation
 
-1. Clone the repository <br>
-   `git clone https://github.com/anurag-adk/movies-api.git`
+1. Clone the repository
 
-2. Navigate to the root directory<br>
-   `cd movies-api`
+   ```
+   git clone https://github.com/anurag-adk/movies-api.git
+   ```
 
-3. Install all the dependencies<br>
-   `npm install`
+2. Navigate to the root directory
 
-4. Set up your `.env` file as below<br>
-   `PORT=port-number`<br>
-   `db_conn=your-mongodb-connection-string`
+   ```
+   cd movies-api
+   ```
 
-5. start the server<br>
-   `npm start`
+3. Install all the dependencies
+
+   ```
+   npm install
+   ```
+
+4. Set up your `.env` file as below
+
+   ```
+   PORT=port-number
+   db_conn=your-mongodb-connection-string
+   ```
+
+5. start the server
+
+   ```
+   npm start
+   ```
 
 ### API Endpoints
 
