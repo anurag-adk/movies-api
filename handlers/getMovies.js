@@ -6,7 +6,8 @@ const getMovies = async (req, res) => {
     // rating: 8.8,
   });
   res.status(200).json({
-    // message: "All Movies",
+    status: "Success",
+    message: "All Movies",
     movies: listMovies,
   });
 };

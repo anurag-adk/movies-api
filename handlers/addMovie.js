@@ -23,6 +23,7 @@ const addMovie = async (req, res) => {
   }
 
   res.status(200).json({
+    status: "Success",
     message: "Movie Added",
     movie: createdMovie, //We could not have accessed its value
   });
